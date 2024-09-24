@@ -1,0 +1,36 @@
+header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-nav-list {
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-nav-element {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1.25rem;
+    font-weight: lighter;
+    position: relative;
+}
+
+.header-nav-element::after {
+    content: "";
+    background-color: var(--primary-text-color);
+    mix-blend-mode: exclusion;
+    width: calc(100% + 16px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -8px;
+    transition: all 0.15s cubic-bezier(0.5, 0.05, 0.55, 1);
+}
+
+.header-nav-element:hover::after {
+    height: calc(100% + 8px);
+}
