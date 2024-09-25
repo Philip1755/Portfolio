@@ -1,0 +1,79 @@
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 0;
+}
+
+#hero-left {
+    margin-right: 20px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--accent-color) 20%, transparent 21%);
+    background-size: 100px 100px;
+    background-position: center;
+    transition: background-size .5s ease;
+    position: relative;
+}
+
+#hero-left:hover {
+    background-size: 75px 75px;
+}
+
+#hero-left img {
+    filter: grayscale(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    transition: scale .5s ease;
+}
+
+#hero-left:hover img {
+    scale: 1.4;
+}
+
+#hero-right {
+    margin-left: 20px;
+}
+
+#hero-right h3 {
+    color: var(--primary-text-color);
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+#hero-right h1 {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+#hero-right h4 {
+    color: var(--primary-text-color);
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+#last-name {
+    color: var(--accent-color);
+}
+
+#quotation {
+    height: 100px;
+    background-color: #111;
+    text-align: center;
+    align-content: center;
+    color: var(--primary-text-color);
+    font-size: 1.5em;
+}
+
+#quotation q {
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+#quotation p {
+    font-weight: lighter;
+}
