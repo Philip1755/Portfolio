@@ -9,7 +9,7 @@
     margin-right: 20px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, var(--accent-color) 20%, transparent 21%);
+    background-image: radial-gradient(circle, var(--accent-color) 20%, transparent 21%);
     background-size: 100px 100px;
     background-position: center;
     transition: background-size .8s ease;
@@ -57,24 +57,4 @@
 
 #last-name {
     color: var(--accent-color);
-}
-
-#quotation {
-    height: 100px;
-    background-color: #111;
-    text-align: center;
-    align-content: center;
-    color: var(--primary-text-color);
-    font-size: 1.5em;
-}
-
-#quotation q {
-    font-weight: bold;
-    font-style: italic;
-    margin-right: 10px;
-}
-
-#quotation p {
-    font-weight: lighter;
-    margin: 0 25px;
 }

@@ -6,9 +6,8 @@
 :root {
     --primary-background-color: #121212;
     --primary-text-color: #fffbf4;
-    --secondary-text-color: #d8cfbc;
     --accent-color: #ffd343;
-    --background-gradient: linear-gradient(270deg, #121212, #242424);
+    --background-gradient: linear-gradient(290deg, #121212, #202020);
 }
 
 * {
@@ -23,10 +22,15 @@ body {
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background: var(--primary-background-color);
-    background: var(--background-gradient);
+    background-color: var(--primary-background-color);
+    background-image: var(--background-gradient);
 }
 
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+.splitter {
+    background-color: var(--accent-color);
+    height: 5px;
 }
