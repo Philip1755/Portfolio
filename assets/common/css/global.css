@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Quicksand";
-    src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
 }
 
 :root {
@@ -20,4 +20,10 @@
 
 body {
     background-color: var(--primary-background-color);
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    color: var(--primary-text-color);
+    font-size: 2em;
 }
